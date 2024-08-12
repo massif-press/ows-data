@@ -1,0 +1,140 @@
+[
+    {
+        "id": "ms_emergency_repair_module",
+        "name": "Emergency Repair Module",
+        "source": "HA",
+        "license": "Gilgamesh",
+        "license_level": 1,
+        "description": "Emergency repair modules are often a mainstay on Armory chassis galaxy-wide. Through a combination of active nanite slurry, hardpatch welding, and shunting to redundant systems in response to immediate damage, they ensure that a chassis will be able to quickly complete nonmassive battlefield repairs in order to remain operational. A number of informal celebratory traditions have arisen throughout the legions to commemorate a pilot's first time taking damage sufficient to trigger an ERM in combat.",
+        "effect": "Whenever you or an adjacent ally Braces, you may expend a charge and spend 1 Repair to restore that character's HP to full immediately after they take damage from the triggering attack. If that character took structure damage from the triggering attack, they also roll one less die on the structure damage check to a minimum of 0 (which results in no effect).",
+        "type": "System",
+        "sp": 1,
+        "tags":
+        [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_unique"
+            }
+        ]
+    },
+    {
+        "id": "ms_spear_charges",
+        "name": "SPEAR Charges",
+        "source": "HA",
+        "license": "Gilgamesh",
+        "license_level": 3,
+        "description": "Only recently approved for widespread distribution throughout Legion forces, the Special Purpose Enhanced Anti-armor Rocket is a lightweight munition delivery system designed to be used in place of larger payload weapons such as the GMS MC-RPG or the Snapdragon ACGM. Designed for ease of use with minimal training and fired from disposable tube launchers, each rocket can either be used in direct-fire mode or set to loiter over an area, initiating top-down terminal interception upon recognizing hostile contact within its established threat perimeter.",
+        "type": "System",
+        "sp": 3,
+        "tags":
+        [
+            {
+                "id": "tg_limited",
+                "val": 2
+            },
+            {
+                "id": "tg_unique"
+            },
+            {
+                "id": "tg_grenade"
+            }
+        ],
+        "actions":
+        [
+            {
+                "name": "Anti-Armor Rocket",
+                "activation": "Quick",
+                "detail": "You fire a rocket, targeting a single character within range 10. Your target must pass an Agility save or take 6 AP explosive damage. On a success, they take half damage."
+            }
+        ],
+        "deployables":
+        [
+            {
+                "name": "Loitering Payload",
+                "type": "Mine",
+                "detail": "Deploy a loitering payload to a free space within range 3, where it establishes a Burst 2 area. When deployed, this mine's area cannot overlap any hostile characters. This advanced munition does not detonate normally; instead, the next time a hostile character voluntarily moves more than 1 space while within its area, up to 10 spaces high, the payload immediately launches itself at them, detonating. They must pass an Agility save or take 2d6 AP explosive damage and immediately stop and lose all remaining movement. On a success, they take half damage only. Failing to disarm this mine also causes it to detonate against that character. A character can only trigger one loitering payload per turn."
+            }
+        ]
+    },
+    {
+        "id": "ms_utility_drone",
+        "name": "Utility Drone",
+        "source": "HA",
+        "license": "Gilgamesh",
+        "license_level": 2,
+        "type": "System",
+        "sp": 2,
+        "description": "Mass produced and distributed to Armory legions wherever they may find themselves deployed, the \"Argos\" utility drone is a common sight throughout the Purview and beyond. Legionnaire doctrine calls for extensive use of Argos drones to supplement and enhance squad performance, with each drone serving as a multipurpose platform incorporating numerous systems and components, including threat interception arrays, electrostatic discharge area denial/suppression projectors, and field diagnostic loadouts.",
+        "tags":
+        [
+            {
+                "id": "tg_limited",
+                "val": 2
+            },
+            {
+                "id": "tg_unique"
+            }
+        ],
+        "deployables":
+        [
+            {
+                "name": "Utility Drone",
+                "type": "Drone",
+                "detail": "Expend 1-2 charges to deploy that many utility drones to free spaces within Sensors where they each create a Burst 2 area. Hostile characters within this area make all checks and saves with +1 Difficulty, and all allied characters within this area gain +1 Accuracy on all checks and saves. This effect does not stack with other utility drones.<br><br>The utility drone can be redeployed to a new location as a quick action. It cannot be recalled and expires at the end of the scene.",
+                "size": 0.5,
+                "activation": "Quick",
+                "redeploy": "Quick",
+                "instances": 1,
+                "cost": 1,
+                "hp": 5,
+                "evasion": 10,
+                "edef": 10
+            }
+        ]
+    },
+    {
+        "id": "ms_quickfoam_charges",
+        "name": "Quickfoam Charges",
+        "source": "EXOTIC",
+        "license": "",
+        "license_level": 0,
+        "description": "A common piece of equipment aboard commercial and military spacefaring vessels alike, \"quickfoam\" is a self-curing polymer foam laced with whitewash utility nanites that rapidly expands and hardens even in null-atmosphere conditions, used to seal hull breaches and sustain compromised systems. While not considered part of a standard combat loadout, marine pilots often make use of deployable airburst cannisters full of the substance to effect in-field emergency repairs or to set improvised snare traps in chokepoints and access corridors.",
+        "type": "System",
+        "sp": 3,
+        "tags":
+        [
+            {
+                "id": "tg_limited",
+                "val": 2
+            },
+            {
+                "id": "tg_unique"
+            },
+            {
+                "id": "tg_grenade"
+            },
+            {
+                "id": "tg_exotic"
+            }
+        ],
+        "actions":
+        [
+            {
+                "name": "Patch Grenade",
+                "activation": "Quick",
+                "detail": "You throw a grenade, targeting a character within Range 5. When used on an allied character, you Bolster the target and they may clear one hostile condition. When used on a hostile character, they become Impaired and Slowed until the end of their next turn."
+            }
+        ],
+        "deployables":
+        [
+            {
+                "name": "Sealant Mine",
+                "type": "Mine",
+                "detail": "Deploy a sealant mine which establishes a Burst 1 area. This mine detonates when a character moves adjacent to or over it. All allied characters (including yourself) within the affected area gain Grit+4 Overshield and clear all burn. All hostile characters in the affected area become Immobilized by quick-curing foam sealant, which hardens in place. They remain Immobilized until the hardened foam takes enough damage to break; it counts as an object with 10 HP and Evasion 5."
+            }
+        ]
+    }
+]

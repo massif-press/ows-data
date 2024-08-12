@@ -1,0 +1,27 @@
+[
+    {
+        "id": "mw_bounder_class_comp_con",
+        "name": "BOUNDER-Class Comp/Con",
+        "sp": 3,
+        "allowed_types": ["CQB", "Rifle", "Cannon"],
+        "source": "EXOTIC",
+        "license": "",
+        "license_level": 0,
+        "effect": "This Mod does not work with Blast, Burst, Line, or Cone weapons. 1/round you may choose one of the following:<ul><li>When you miss an attack with this weapon, you may reroll that attack against a different target, tracing Range and line of sight from the original target's location.</li><li>You may bank your shot around corners and off of the environment to hit distant targets. Choose a piece of terrain or object Size 1 or larger within the weapon's Range and line of sight. When you make your attack, you may trace Range and line of sight from that location instead.</li><li>When you roll a 20 on a die for this attack (sometimes called a \"natural 20\"), you may riccochet the shot to strike a critical area on the target. The attack's damage can't be reduced in any way, and on hit the target is knocked Prone.</li></ul><br><br>This system isn't a full NHP and cannot enter cascade.",
+        "description": "Originally planned as part of the \"Campbell\" license package, which ultimately lost to the Caliban during selection trials, the BOUNDER-class comp/con nonetheless represents one of IPS-N's latest developments in next-generation smart weapons design. The Campbell program was intended to facilitate successful boarding actions through indirect targeting solutions, minimizing the risk of incoming retaliatory fire, and although the Campbell was ultimately never adopted, BOUNDER remains available as a self-contained license for requisition.<br><br>BOUNDER is a joint hardware/software package suitable for most mainline armaments, designed to maximize surface reflectivity and projectile/waveform cohesion through a combination of specialized ammunition, variable electromagnetic lensing, and adjustable firing profiles. Thanks to the system's advanced ballistic calculation capabilities, users are able accurately chart oblique firing solutions across hard surfaces in realtime with acceptable accuracy.<br><br>Lessons learned from the infamous UNCLE-class comp/con have resulted in a much more stable and user-friendly experience, though some pilots with experience of both systems claim they find UNCLE's idiosyncrasies more endearing than BOUNDER's polished, but less eccentric, personality.",
+        "tags": [
+          {
+            "id": "tg_unique"
+          },
+          {
+            "id": "tg_ai"
+          },
+          {
+            "id": "tg_no_cascade"
+          },
+          {
+            "id": "tg_exotic"
+          }
+        ]
+      }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "id": "cb_order_of_leander",
+        "name": "Order of Leander",
+        "source": "GMS",
+        "effect": "1/scene, you may add +1 Accuracy to any attack, check, or save made by you or an allied character within Range 10, adding an additional +1 Accuracy for each structure damage you have; allied characters who receive this bonus also gain Grit+4 Overshield. If you take structure damage during the scene after this ability is expended, you may use it a second time.<br><br>This core bonus counts as a piece of Exotic Gear.",
+        "description": "The Order of Leander is a Leandric States Alliance commendation given to those who have shown \"exemplary character, courage, and determination under great adversity.\" While primarily a military citation, precedent exists for it to be awarded to civilians as well, with a number of noteworthy historical figures having earned it for efforts during natural disasters, search-and-rescue missions, and medical crises. In Cressidium's settled history, no one from any other world has ever earned this award, but whether you come from beyond the stars or not, for your service in defense of both the LSA as well as Cressidium you have earned the right to wear it with pride."
+    }
+]

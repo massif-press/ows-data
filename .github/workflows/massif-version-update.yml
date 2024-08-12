@@ -1,0 +1,15 @@
+# This workflow will update the C/C directory version (for Massif Packs only)
+
+name: Update Directory Version
+
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+
+jobs:
+  call-dir-version-update:
+    uses: massif-press/.github/.github/workflows/massif-version-update.yml@master
+    secrets:
+      CC_API_KEY: ${{ secrets.CC_API_KEY }}
+      CC_DIR_ID: ${{ secrets.CC_DIR_ID }}
