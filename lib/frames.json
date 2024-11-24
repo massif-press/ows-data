@@ -58,7 +58,7 @@
       "active_effect": "You gain Immunity to all conditions not caused by your own systems, talents, etc, until the end of your next turn, and clear all such conditions you already have (including that that can't be cleared normally). You also clear Exposed, stand from Prone, and gain Grit+4 Overshield. At the end of your next turn, clear this Overshield. This ability can be used even if you would not normally be able to take this action (e.g., if you are Stunned).<br><br>Using this ability during combat counts as expending a Limited charge."
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/gilgamesh.png",
-    "y_pos": 0
+    "y_pos": 9
   },
   {
     "id": "mf_amber_phantom",
@@ -105,7 +105,7 @@
       "active_effect": "Choose one allied character that has not taken their turn this round. That character may take their turn either immediately after your turn ends, or they may take their turn now before you do anything else, pausing your own turn until their turn ends. If they choose to act now, they count as acting before you in the PC turn order. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/amber_phantom.png",
-    "y_pos": 0
+    "y_pos": 16
   },
   {
     "id": "mf_lycan",
@@ -155,7 +155,7 @@
       "integrated": ["mw_integrated_shock_claws"]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/lycan.png",
-    "y_pos": 0
+    "y_pos": 29
   },
   {
     "id": "mf_kutuzov",
@@ -202,6 +202,6 @@
       "active_effect": "Choose an allied character within line of sight, and then choose a hostile character within line of sight. Until the end of your next turn, those characters can't attack each other or force saves against each other via actions. This ability counts as a system with the <b>Shield</b> tag.<br><br>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/kutuzov.png",
-    "y_pos": 0
+    "y_pos": 27
   }
 ]
