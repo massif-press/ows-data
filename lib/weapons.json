@@ -294,7 +294,7 @@
     ],
     "on_hit": {
       "detail": "This weapon creates a Cone 5 area originating from the target, oriented away from them in a direction of your choice and tracing line of sight from that target. All units in this area must pass an Agility save or take 1d6 kinetic damage.",
-      "damage": [{ "type": "Kinetic", "val": "1d6", "save": true, "save_stat": "agility" }],
+      "damage": [{ "type": "Kinetic", "val": "1d6", "save": "agility" }],
       "range": [{ "type": "Cone", "val": 5 }]
     }
   },
@@ -336,10 +336,9 @@
       "frequency": "1/round",
       "add_status": [
         {
-          "status": "Shredded",
+          "id": "Shredded",
           "duration": "end_next_turn_target",
-          "save": true,
-          "save_stat": "hull"
+          "save": "hull"
         }
       ]
     }

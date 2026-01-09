@@ -138,8 +138,11 @@
           "name": "Precognitive Strike",
           "detail": "1/round, if you take your turn during the point in the PC turn order you chose at the start of the round, you may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If you take your turn at another point in the round, you may still gain this bonus damage, but you take 1d6 heat when doing so.",
           "frequency": "1/round",
-          "bonus_damage": "1d6",
-          "damage": [{ "type": "heat", "val": "1d6", "target": "self" }]
+          "bonus_damage": {
+            "detail": "Once per round, if you take your turn during the point in the PC turn order you chose at the start of the round, you may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If you take your turn at another point in the round, you may still gain this bonus damage, but you take 1d6 heat when doing so.",
+            "val": "1d6"
+          },
+          "damage": [{ "type": "Heat", "val": "1d6", "target": "self" }]
         }
       ],
       "active_name": "Convergence Point",
@@ -201,8 +204,8 @@
             "frequency": "1/round",
             "range": [{ "type": "range", "val": 3 }],
             "add_status": [
-              { "status": "Impaired", "save": true, "save_stat": "systems" },
-              { "status": "Slowed", "save": true, "save_stat": "systems" }
+              { "id": "Impaired", "save": "systems" },
+              { "id": "Slowed", "save": "systems" }
             ]
           }
         ]

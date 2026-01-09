@@ -11,11 +11,11 @@
     "on_miss": "You may reroll that attack against a different target, tracing Range and line of sight from the original target's location.",
     "on_hit": {
       "detail": "The attack's damage can't be reduced in any way, and on hit the target is knocked Prone.",
-      "add_status": [{ "status": "Prone", "duration": "end_next_turn_target" }]
+      "add_status": [{ "id": "Prone", "duration": "end_next_turn_target" }]
     },
     "on_crit": {
       "detail": "The attack's damage can't be reduced in any way, and on hit the target is knocked Prone.",
-      "add_status": [{ "status": "Prone", "duration": "end_next_turn_target" }],
+      "add_status": [{ "id": "Prone", "duration": "end_next_turn_target" }],
       "condition": "You roll a 20 on a die for this attack (sometimes called a \"natural 20\")"
     },
     "description": "Originally planned as part of the \"Campbell\" license package, which ultimately lost to the Caliban during selection trials, the BOUNDER-class comp/con nonetheless represents one of IPS-N's latest developments in next-generation smart weapons design. The Campbell program was intended to facilitate successful boarding actions through indirect targeting solutions, minimizing the risk of incoming retaliatory fire, and although the Campbell was ultimately never adopted, BOUNDER remains available as a self-contained license for requisition.<br><br>BOUNDER is a joint hardware/software package suitable for most mainline armaments, designed to maximize surface reflectivity and projectile/waveform cohesion through a combination of specialized ammunition, variable electromagnetic lensing, and adjustable firing profiles. Thanks to the system's advanced ballistic calculation capabilities, users are able accurately chart oblique firing solutions across hard surfaces in realtime with acceptable accuracy.<br><br>Lessons learned from the infamous UNCLE-class comp/con have resulted in a much more stable and user-friendly experience, though some pilots with experience of both systems claim they find UNCLE's idiosyncrasies more endearing than BOUNDER's polished, but less eccentric, personality.",

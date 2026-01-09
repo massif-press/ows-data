@@ -54,7 +54,7 @@
         "detail": "You fire a rocket, targeting a single character within range 10. Your target must pass an Agility save or take 6 AP explosive damage. On a success, they take half damage.",
         "range": [{ "type": "range", "val": 10 }],
         "damage": [
-          { "type": "explosive", "val": "6", "ap": true, "save": "half", "save_stat": "agility" }
+          { "type": "Explosive", "val": "6", "ap": true, "save": "agility", "save_half": true }
         ]
       }
     ],
@@ -64,7 +64,7 @@
         "type": "Mine",
         "detail": "Deploy a loitering payload to a free space within range 3, where it establishes a Burst 2 area. When deployed, this mine's area cannot overlap any hostile characters. This advanced munition does not detonate normally; instead, the next time a hostile character voluntarily moves more than 1 space while within its area, up to 10 spaces high, the payload immediately launches itself at them, detonating. They must pass an Agility save or take 2d6 AP explosive damage and immediately stop and lose all remaining movement. On a success, they take half damage only. Failing to disarm this mine also causes it to detonate against that character. A character can only trigger one loitering payload per turn.",
         "damage": [
-          { "type": "explosive", "val": "2d6", "ap": true, "save": "half", "save_stat": "agility" }
+          { "type": "Explosive", "val": "2d6", "ap": true, "save": "agility", "save_half": true }
         ]
       }
     ]
@@ -134,8 +134,8 @@
         "detail": "You throw a grenade, targeting a character within Range 5. When used on an allied character, you Bolster the target and they may clear one hostile condition. When used on a hostile character, they become Impaired and Slowed until the end of their next turn.",
         "range": [{ "type": "range", "val": 5 }],
         "add_status": [
-          { "status": "Impaired", "duration": "end_next_turn_target" },
-          { "status": "Slowed", "duration": "end_next_turn_target" }
+          { "id": "Impaired", "duration": "end_next_turn_target" },
+          { "id": "Slowed", "duration": "end_next_turn_target" }
         ]
       }
     ],
@@ -146,7 +146,7 @@
         "hp": 10,
         "evasion": 5,
         "detail": "Deploy a sealant mine which establishes a Burst 1 area. This mine detonates when a character moves adjacent to or over it. All allied characters (including yourself) within the affected area gain Grit+4 Overshield and clear all burn. All hostile characters in the affected area become Immobilized by quick-curing foam sealant, which hardens in place. They remain Immobilized until the hardened foam takes enough damage to break; it counts as an object with 10 HP and Evasion 5.",
-        "add_status": [{ "status": "Immobilized" }],
+        "add_status": [{ "id": "Immobilized" }],
         "add_other": { "type": "overshield", "value": "{grit}+4", "target": "ally" }
       }
     ]
