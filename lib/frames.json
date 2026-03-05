@@ -1,6 +1,7 @@
 [
   {
     "id": "mf_gilgamesh",
+    "license_id": "mf_gilgamesh",
     "license_level": 2,
     "source": "HA",
     "name": "Gilgamesh",
@@ -61,9 +62,10 @@
       "passive_effect": "The Gilgamesh has a modular construction framework which allows it to easily make in-field repairs by blowing off and replacing damaged limbs and components with spares. 1/scene as a free action, you may choose one of the following:<ul><li>Regain 1/2 of your total HP.</li><li>Repair a destroyed weapon or system.</li></ul>If you don't use this ability during combat, then when you next rest you may either regain all HP or automatically repair a destroyed weapon or system.<br><br>Using this ability during combat counts as expending a Limited charge.",
       "passive_actions": [
         {
-          "name": "Modular Repairs",
+          "name": "Field Strip",
           "activation": "Free",
-          "effect": "1/scene as a free action, you may choose one of the following:<ul><li>Regain 1/2 of your total HP.</li><li>Repair a destroyed weapon or system.</li></ul>If you don't use this ability during combat, then when you next rest you may either regain all HP or automatically repair a destroyed weapon or system.<br><br>Using this ability during combat counts as expending a Limited charge."
+          "frequency": "1/scene",
+          "detail": "Choose one: Regain 1/2 of your total HP, or repair a destroyed weapon or system. Using this ability counts as expending a Limited charge."
         }
       ],
       "active_name": "Exo Amplification",
@@ -82,6 +84,7 @@
   },
   {
     "id": "mf_amber_phantom",
+    "license_id": "mf_amber_phantom",
     "license_level": 2,
     "source": "SSC",
     "name": "Amber Phantom",
@@ -112,18 +115,20 @@
         "active_effects": [
           {
             "name": "Hyperawareness",
-            "detail": "At the start of each round, until the Amber Phantom takes its turn, all attacks against it are made with +1 Difficulty and it makes all saves with +1 Accuracy."
+            "detail": "At the start of each round, until you take your turn, all attacks against you are made with +1 Difficulty and you make all saves with +1 Accuracy."
           }
         ]
       },
       {
         "name": "Battle Oracle",
         "description": "1/round, when a hostile character misses the Amber Phantom with an attack, it may pull a character within Sensors up to 2 spaces in any direction.",
-        "active_effects": [
+        "actions": [
           {
             "name": "Battle Oracle",
-            "detail": "1/round, when a hostile character misses the Amber Phantom with an attack, it may pull a character within Sensors up to 2 spaces in any direction.",
-            "frequency": "1/round"
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "A hostile character misses you with an attack.",
+            "detail": "Pull a character within Sensors up to 2 spaces in any direction."
           }
         ]
       }
@@ -133,27 +138,29 @@
       "description": "SSC's precognitive neural bridging systems are not paracausal as the name might suggest. Using carefully modulated neural stimulation and acceleration, the operator's ability to consciously process and assimilate even subconsciously-derived sensory input is greatly amplified, reducing feedback delay and enhancing reaction time to near-instinctive levels. This then allows users to more accurately predict immediate future occurrences based on comprehensive sensory awareness and intuitive analysis, hence precognition.<br><br>To further enhance this system's capability, the Amber Phantom marries precognitive bridging with a chorus of predictive modeling and tactical simulation systems to provide the pilot with even more information. The result is the creation of a holistic battlefield timeline continuously extending forward several seconds in advance of realtime, granting users an unparalleled ability to choose the precise, optimal moment to act in all situations, reacting to ongoing events even before they occur.",
       "passive_name": "Possibility Mapping",
       "passive_effect": "At the start of each round, choose a point during the PC turn order to act (i.e. if there are three PCs, you can choose to act first, second, or third among them). 1/round, if you take your turn during that point, you may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If you take your turn at another point in the round, you may still gain this bonus damage, but you take 1d6 heat when doing so.",
-      "passive_active_effects": [
+      "passive_effects": [
         {
-          "name": "Precognitive Strike",
-          "detail": "1/round, if you take your turn during the point in the PC turn order you chose at the start of the round, you may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If you take your turn at another point in the round, you may still gain this bonus damage, but you take 1d6 heat when doing so.",
-          "frequency": "1/round",
-          "bonus_damage": {
-            "detail": "Once per round, if you take your turn during the point in the PC turn order you chose at the start of the round, you may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If you take your turn at another point in the round, you may still gain this bonus damage, but you take 1d6 heat when doing so.",
-            "val": "1d6"
-          },
-          "damage": [{ "type": "Heat", "val": "1d6", "target": "self" }]
+          "name": "Possibility Mapping",
+          "detail": "At the start of each round, choose a point in the PC turn order. 1/round, if you act at that point, deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. Acting at another point costs 1d6 heat."
         }
       ],
       "active_name": "Convergence Point",
       "activation": "Protocol",
-      "active_effect": "Choose one allied character that has not taken their turn this round. That character may take their turn either immediately after your turn ends, or they may take their turn now before you do anything else, pausing your own turn until their turn ends. If they choose to act now, they count as acting before you in the PC turn order. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
+      "active_effect": "Choose one allied character that has not taken their turn this round. That character may take their turn either immediately after your turn ends, or they may take their turn now before you do anything else, pausing your own turn until their turn ends. If they choose to act now, they count as acting before you in the PC turn order. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "active_actions": [
+        {
+          "name": "Convergence Point",
+          "activation": "Protocol",
+          "detail": "Choose one allied character that has not taken their turn this round. They may take their turn immediately after yours ends, or now before you do anything else (pausing your turn). If they act now, they count as acting before you. This ability is Efficient and refunds 1 Core Point at end of scene."
+        }
+      ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/amber_phantom.png",
     "y_pos": 0
   },
   {
     "id": "mf_lycan",
+    "license_id": "mf_lycan",
     "license_level": 2,
     "source": "HORUS",
     "name": "Lycan",
@@ -181,7 +188,10 @@
       {
         "name": "Slag Carapace",
         "description": "The Lycan has resistance to Energy Damage and Burn.",
-        "add_resist": [{ "resistance": "energy" }, { "resistance": "burn" }]
+        "add_resist": [
+          { "resistance": "energy", "target": "self" },
+          { "resistance": "burn", "target": "self" }
+        ]
       },
       {
         "name": "Interference Field",
@@ -216,7 +226,20 @@
       "description": "As a chassis designed for covert operations, the Lycan leverages the Manticore's affinity for electromagnetics in order to further obscure its precise nature, wrapping itself in a layered mesh of sensor baffles and wideband interference signals that disrupt and distort recognition scans and targeting systems. The effects of this distortion field are so intense that they even cause sporadic, uncontrolled power fluctuations in nearby systems, and pilots who have survived combat with Lycan PG chassis report experiencing intermittent electronics blackouts and even reduced reactor output upon approach.<br><br>However, the most distinctive feature of the Lycan by far is its ability to shift from its default, heavily-armored configuration to a more aggressive assault mode. This transformation is dramatic and known to cause panic among enemy forces as the Lycan's true nature is suddenly revealed in an explosive jettisoning of armor plating and a violent surge of power diverted towards the chassis' concealed shock claws, a series of retractable, high-temperature arc blades based on Manticore armament designs and embedded with a series of retaliatory \"self-sharpening\" heuristics.",
       "active_name": "Go Loud",
       "activation": "Full",
-      "active_effect": "You violently jettison the Lycan's external carapace, extending brutal talons and supercharging its reactor. For the rest of the scene, your base Armor becomes 0, your base Speed becomes 6, Slag Carapace and Interference Field are disabled, and you gain the Shock Claws integrated weapon.<br<br>You may then charge forward to strike, moving your Speed and making an attack against a target within Range using the Shock Claws. This attack counts as a Barrage for the purpose of duplicate action restrictions.<br><br>Before activation, this weapon's output can be enhanced by proximity to extreme structural damage. The first time in a scene that an allied Mech character within Sensors takes structure damage from a hostile source before you activate Go Loud, this weapon becomes Threat 2. If this happens a second time before activating it, this weapon now also deals 4d6+6 energy damage instead of 3d6+6.<br><br>If an allied Mech character is destroyed before you activate Go Loud, or if you activate it while at 2 Structure or less, you automatically gain both of these additional benefits.<br><br>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "active_effect": "You violently jettison the Lycan's external carapace, extending brutal talons and supercharging its reactor. For the rest of the scene, your base Armor becomes 0, your base Speed becomes 6, Slag Carapace and Interference Field are disabled, and you gain the Shock Claws integrated weapon.<br><br>You may then charge forward to strike, moving your Speed and making an attack against a target within Range using the Shock Claws. This attack counts as a Barrage for the purpose of duplicate action restrictions.<br><br>Before activation, this weapon's output can be enhanced by proximity to extreme structural damage. The first time in a scene that an allied Mech character within Sensors takes structure damage from a hostile source before you activate Go Loud, this weapon becomes Threat 2. If this happens a second time before activating it, this weapon now also deals 4d6+6 energy damage instead of 3d6+6.<br><br>If an allied Mech character is destroyed before you activate Go Loud, or if you activate it while at 2 Structure or less, you automatically gain both of these additional benefits.<br><br>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "active_effects": [
+        {
+          "name": "Go Loud",
+          "detail": "For the rest of the scene: base Armor becomes 0, base Speed becomes 6, Slag Carapace and Interference Field are disabled, and you gain the Shock Claws integrated weapon."
+        }
+      ],
+      "active_actions": [
+        {
+          "name": "Go Loud",
+          "activation": "Full",
+          "detail": "Jettison the Lycan's carapace: base Armor becomes 0, base Speed becomes 6, Slag Carapace and Interference Field are disabled. Gain Shock Claws. You may then move your Speed and attack with Shock Claws (counts as Barrage). Shock Claws can be enhanced by allied structure damage before activation. This ability is Efficient."
+        }
+      ],
       "integrated": ["mw_integrated_shock_claws"]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/lycan.png",
@@ -224,6 +247,7 @@
   },
   {
     "id": "mf_kutuzov",
+    "license_id": "mf_kutuzov",
     "license_level": 2,
     "source": "HA",
     "name": "Kutuzov",
@@ -287,7 +311,14 @@
       ],
       "active_name": "Projected Aegis",
       "activation": "Quick",
-      "active_effect": "Choose an allied character within line of sight, and then choose a hostile character within line of sight. Until the end of your next turn, those characters can't attack each other or force saves against each other via actions. This ability counts as a system with the <b>Shield</b> tag.<br><br>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
+      "active_effect": "Choose an allied character within line of sight, and then choose a hostile character within line of sight. Until the end of your next turn, those characters can't attack each other or force saves against each other via actions. This ability counts as a system with the <b>Shield</b> tag.<br><br>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "active_actions": [
+        {
+          "name": "Projected Aegis",
+          "activation": "Quick",
+          "detail": "Choose an allied character and a hostile character, both within line of sight. Until the end of your next turn, those characters can't attack each other or force saves against each other. Counts as a Shield system. This ability is Efficient."
+        }
+      ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/kutuzov.png",
     "y_pos": 0

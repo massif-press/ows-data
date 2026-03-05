@@ -33,19 +33,7 @@
         "effect": "This weapon may only be used during the Go Loud core power. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
         "on_attack": {
           "detail": "You may deal 1d6 AP energy damage to a different character of your choice within Range 3 of the target.",
-          "damage": [
-            {
-              "type": "Energy",
-              "val": "1d6",
-              "ap": true
-            }
-          ],
-          "range": [
-            {
-              "type": "Range",
-              "val": 3
-            }
-          ]
+          "damage": [{ "type": "Energy", "val": "1d6" }]
         }
       },
       {
@@ -141,6 +129,7 @@
     "name": "Legionnaire Battle Rifle",
     "source": "HA",
     "license": "Gilgamesh",
+    "license_id": "mf_gilgamesh",
     "license_level": 1,
     "mount": "Heavy",
     "type": "Rifle",
@@ -219,6 +208,7 @@
     "name": "Legion Nexus",
     "source": "HA",
     "license": "Gilgamesh",
+    "license_id": "mf_gilgamesh",
     "license_level": 3,
     "mount": "Superheavy",
     "sp": 2,
@@ -233,7 +223,7 @@
     "range": [
       {
         "type": "Range",
-        "val": "10"
+        "val": 10
       }
     ],
     "tags": [
@@ -294,8 +284,9 @@
     ],
     "on_hit": {
       "detail": "This weapon creates a Cone 5 area originating from the target, oriented away from them in a direction of your choice and tracing line of sight from that target. All units in this area must pass an Agility save or take 1d6 kinetic damage.",
-      "damage": [{ "type": "Kinetic", "val": "1d6", "save": "agility" }],
-      "range": [{ "type": "Cone", "val": 5 }]
+      "damage": [{ "type": "Kinetic", "val": "1d6" }],
+      "range": [{ "type": "Cone", "val": 5 }],
+      "save": "agility"
     }
   },
   {

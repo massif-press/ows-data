@@ -4,14 +4,16 @@
     "name": "Emergency Repair Module",
     "source": "HA",
     "license": "Gilgamesh",
+    "license_id": "mf_gilgamesh",
     "license_level": 1,
     "description": "Emergency repair modules are often a mainstay on Armory chassis galaxy-wide. Through a combination of active nanite slurry, hardpatch welding, and shunting to redundant systems in response to immediate damage, they ensure that a chassis will be able to quickly complete nonmassive battlefield repairs in order to remain operational. A number of informal celebratory traditions have arisen throughout the legions to commemorate a pilot's first time taking damage sufficient to trigger an ERM in combat.",
     "effect": "Whenever you or an adjacent ally Braces, you may expend a charge and spend 1 Repair to restore that character's HP to full immediately after they take damage from the triggering attack. If that character took structure damage from the triggering attack, they also roll one less die on the structure damage check to a minimum of 0 (which results in no effect).",
-    "active_effects": [
+    "actions": [
       {
-        "name": "Emergency Repair Module",
-        "detail": "Whenever you or an adjacent ally Braces, you may expend a charge and spend 1 Repair to restore that character's HP to full immediately after they take damage from the triggering attack. If that character took structure damage from the triggering attack, they also roll one less die on the structure damage check to a minimum of 0 (which results in no effect).",
-        "condition": "When you or an adjacent ally Braces"
+        "name": "Emergency Repair",
+        "activation": "Reaction",
+        "trigger": "You or an adjacent ally Braces.",
+        "detail": "Expend a charge and spend 1 Repair to restore that character's HP to full immediately after they take damage from the triggering attack. If they took structure damage, they roll one less die on the structure damage check (minimum 0, resulting in no effect)."
       }
     ],
     "type": "System",
@@ -31,6 +33,7 @@
     "name": "SPEAR Charges",
     "source": "HA",
     "license": "Gilgamesh",
+    "license_id": "mf_gilgamesh",
     "license_level": 3,
     "description": "Only recently approved for widespread distribution throughout Legion forces, the Special Purpose Enhanced Anti-armor Rocket is a lightweight munition delivery system designed to be used in place of larger payload weapons such as the GMS MC-RPG or the Snapdragon ACGM. Designed for ease of use with minimal training and fired from disposable tube launchers, each rocket can either be used in direct-fire mode or set to loiter over an area, initiating top-down terminal interception upon recognizing hostile contact within its established threat perimeter.",
     "type": "System",
@@ -74,6 +77,7 @@
     "name": "Utility Drone",
     "source": "HA",
     "license": "Gilgamesh",
+    "license_id": "mf_gilgamesh",
     "license_level": 2,
     "type": "System",
     "sp": 2,

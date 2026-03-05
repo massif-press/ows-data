@@ -1,0 +1,92 @@
+[
+  {
+    "id": "npct_marine",
+    "template": true,
+    "name": "Marine",
+    "description": "Naval boarding and counterboarding actions are among some of the most dangerous operations that pilots can undertake in some of the most treacherous environments imaginable. High casualty rates on both sides are expected and accepted by the commanders who order these soldiers to assault ships and stations or to repel those who seek to take them. Marine pilots know that preparedness is the key to survival and out- fit their chassis accordingly with additional armor, breaching equipment, and close-quarters engagement tools to help tip the odds in their favor when the hullcutter charges blow."
+  },
+  {
+    "id": "npcf_marine_manuverable",
+    "name": "Manuverable",
+    "base": true,
+    "origin": "npct_marine",
+    "type": "Trait",
+    "effect": "The Marine moves normally in zero-g."
+  },
+  {
+    "id": "npcf_marine_filo",
+    "name": "First On, Last Off",
+    "origin": "npct_marine",
+    "type": "Trait",
+    "base": true,
+    "effect": "Reaction attacks against the Marine (e.g., Overwatch) recieve +1 Difficulty."
+  },
+  {
+    "id": "npcf_marine_pointman_plating",
+    "name": "Pointman Plating",
+    "origin": "npct_marine",
+    "type": "Trait",
+    "effect": "If the Marine does not have the Guardian trait, then adjacent allied characters can use the Marine for hard cover. If they already have Guardian, then Guardian additionally grants soft cover to all adjacent allies from all directions."
+  },
+  {
+    "id": "npcf_marine_deck_anchors",
+    "name": "Deck Anchors",
+    "origin": "npct_marine",
+    "type": "Reaction",
+    "tags": [
+      {
+        "id": "tg_npc_system"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Deck Anchors",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "The Marine is involuntarily moved by another character’s attack or as a result of failing a save forced by another character. This excludes teleportation.",
+        "detail": "The Marine ignores that movement."
+      }
+    ]
+  },
+  {
+    "id": "npcf_marine_battering_ram",
+    "name": "Battering Ram",
+    "origin": "npct_marine",
+    "type": "System",
+    "effect": "The Marine deals {10/20/30} Kinetic AP to an adjacent piece of terrain, obstruction, or Deployable. They may move 2 spaces before or after using this system."
+  },
+  {
+    "id": "npcf_marine_portable_barricade",
+    "name": "Portable Barricade",
+    "origin": "npct_marine",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "effect": "The Marine can deploy a Size 1 barrier in a free adjacent area for each charge expended when they activate this system. These barriers have 10 HP and Evasion 5, and a burst1 area around each barrier counts as difficult terrain for hostile characters only.",
+    "deployables": [
+      {
+        "name": "Portable Barricade",
+        "hp": 10,
+        "evasion": 5,
+        "size": 1,
+        "active_effects": [
+          {
+            "name": "Portable Barricade",
+            "detail": "A burst 1 area around this barricade counts as difficult terrain for hostile characters only."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "npcf_marine_captive_spike",
+    "name": "Captive Spike",
+    "origin": "npct_marine",
+    "type": "System",
+    "effect": "The Marine deploys a powerful piston spike against an adjacent hostile character. The target must pass a Hull save. On a success, they become Impaired until the end of their next turn. On a failure, they are impaled on the spike, and become automatically Grappled and Impaired for the duration of the grapple. The Marine becomes Slowed for the duration of the grapple, but is automatically treated as the larger character regardless of Size. Breaking free from this grapple requires the defender to pass a Hull save as a full action rather than a contested Hull check.<br>While the target is Grappled this way, any other character that makes a ranged or melee attack against the Marine must first roll 1d6: on 4+, the attack automatically hits the Grappled character instead, dealing half dam age and heat. This effect does not stack with Invisible. This effect lasts until the grapple is ended or until the Marine takes this action again."
+  }
+]
