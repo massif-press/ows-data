@@ -84,7 +84,7 @@
   },
   {
     "id": "mf_amber_phantom",
-    "license_id": "mf_amber_phantom",
+    "license_id": "mf_metalmark",
     "license_level": 2,
     "source": "SSC",
     "name": "Amber Phantom",
@@ -160,7 +160,7 @@
   },
   {
     "id": "mf_lycan",
-    "license_id": "mf_lycan",
+    "license_id": "mf_manticore",
     "license_level": 2,
     "source": "HORUS",
     "name": "Lycan",
@@ -247,7 +247,7 @@
   },
   {
     "id": "mf_kutuzov",
-    "license_id": "mf_kutuzov",
+    "license_id": "mf_napoleon",
     "license_level": 2,
     "source": "HA",
     "name": "Kutuzov",

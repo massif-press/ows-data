@@ -7,8 +7,6 @@ const data = {
   mods: require('./lib/mods.json'),
   systems: require('./lib/systems.json'),
   weapons: require('./lib/weapons.json'),
-  npcc_mbt: require('./lib/npcc_mbt.json'),
-  npct_marine: require('./lib/npct_marine.json'),
 };
 
 module.exports = data;
