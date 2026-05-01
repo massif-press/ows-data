@@ -11,7 +11,7 @@
     "actions": [
       {
         "name": "Emergency Repair",
-        "activation": "Reaction",
+        "activation": "None",
         "trigger": "You or an adjacent ally Braces.",
         "detail": "Expend a charge and spend 1 Repair to restore that character's HP to full immediately after they take damage from the triggering attack. If they took structure damage, they roll one less die on the structure damage check (minimum 0, resulting in no effect)."
       }
@@ -138,8 +138,8 @@
         "detail": "You throw a grenade, targeting a character within Range 5. When used on an allied character, you Bolster the target and they may clear one hostile condition. When used on a hostile character, they become Impaired and Slowed until the end of their next turn.",
         "range": [{ "type": "range", "val": 5 }],
         "add_status": [
-          { "id": "Impaired", "duration": "end_next_turn_target" },
-          { "id": "Slowed", "duration": "end_next_turn_target" }
+          { "id": "impaired", "duration": "end_next_turn_target" },
+          { "id": "slow", "duration": "end_next_turn_target" }
         ]
       }
     ],

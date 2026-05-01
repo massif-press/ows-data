@@ -3,7 +3,7 @@
   "author": "Massif Press",
   "description": "Operation Winter Scar is a structured mission module for Lancer, written and designed by Kai Tave as a followup to Operation Solstice Rain, continuing the narrative first established there. Having played Operation Solstice Rain prior to this module is recommended, but not necessary. This module takes characters from License Level 2 to LL4 across two missions, pitting the now-seasoned pilots against the might of the Vestan Sovereignty Armed Forces. From advanced combat chassis to main battle tanks, the Sovereignty will stop at nothing in their efforts to push the pilots of Task Force Indigo and their Vestan resistance allies back, all the while the threat of TARTARUS hangs overhead. Special thanks to Nasajin, who built and maintained the preview version of this LCP.",
   "item_prefix": "winterscar",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "image_url": "https://d2c79xe1p61csc.cloudfront.net/other/ows-cover.jpg",
   "website": "https://massif-press.itch.io/winter-scar",
   "version_history": [
@@ -11,6 +11,15 @@
       "version": "2.0.0",
       "date": "2026-03-18",
       "changes": ["Updated to v3."]
+    },
+    {
+      "version": "2.0.1",
+      "date": "2026-05-01",
+      "changes": [
+        "Added 'None' Action proxies to several v3-specific automations",
+        "Fixed broken status applicators on Battle Oracle",
+        "Removed an erroneous action cost from Battle Oracle"
+      ]
     }
   ],
   "v3": true

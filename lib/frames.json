@@ -125,7 +125,7 @@
         "actions": [
           {
             "name": "Battle Oracle",
-            "activation": "Reaction",
+            "activation": "None",
             "frequency": "1/round",
             "trigger": "A hostile character misses you with an attack.",
             "detail": "Pull a character within Sensors up to 2 spaces in any direction."
@@ -214,8 +214,8 @@
             "frequency": "1/round",
             "range": [{ "type": "range", "val": 3 }],
             "add_status": [
-              { "id": "Impaired", "save": "systems" },
-              { "id": "Slowed", "save": "systems" }
+              { "id": "impaired", "save": "systems" },
+              { "id": "slow", "save": "systems" }
             ]
           }
         ]
