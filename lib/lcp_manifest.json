@@ -18,7 +18,8 @@
       "changes": [
         "Added 'None' Action proxies to several v3-specific automations",
         "Fixed broken status applicators on Battle Oracle",
-        "Removed an erroneous action cost from Battle Oracle"
+        "Removed an erroneous action cost from Battle Oracle",
+        "Added missing data to the manifest file"
       ]
     }
   ],

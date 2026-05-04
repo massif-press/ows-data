@@ -200,7 +200,7 @@
           {
             "name": "Interference Field",
             "detail": "All hostile characters within Range 3 of the Lycan take +1 Difficulty on all attacks that do not target the Lycan.",
-            "range": [{ "type": "range", "val": 3 }]
+            "range": [{ "type": "Range", "val": 3 }]
           }
         ]
       },
@@ -212,7 +212,7 @@
             "name": "Power Flux",
             "detail": "1/round, when the Lycan takes heat, a hostile character within Range 3 must pass a Systems save or become Impaired and Slowed until the end of their next turn.",
             "frequency": "1/round",
-            "range": [{ "type": "range", "val": 3 }],
+            "range": [{ "type": "Range", "val": 3 }],
             "add_status": [
               { "id": "impaired", "save": "systems" },
               { "id": "slow", "save": "systems" }
@@ -280,7 +280,7 @@
             "name": "Expulsion Zone",
             "detail": "1/round, when the Kutuzov Activates or otherwise uses a Shield system during its turn, it may knock all hostile characters of its choice within Sensors back 3 spaces.",
             "frequency": "1/round",
-            "range": [{ "type": "range", "val": "{sensors}" }]
+            "range": [{ "type": "Range", "val": "{sensors}" }]
           }
         ]
       },
@@ -291,7 +291,7 @@
           {
             "name": "Emergency Blinkfields",
             "detail": "Whenever the Kutuzov or any allied character within Sensors takes the Brace reaction, they clear Shredded (or ignore its effects if it can't be cleared normally) from hostile sources, and attacks they Brace against can't inflict Shredded.",
-            "range": [{ "type": "range", "val": "{sensors}" }]
+            "range": [{ "type": "Range", "val": "{sensors}" }]
           }
         ]
       }
@@ -306,7 +306,7 @@
           "name": "Projected Benefits",
           "detail": "1/round, when you take the Stabilize action, Bolster Quick Tech action, or Activate or otherwise use a Shield system during your turn, you may grant an allied character within Sensors a benefit based on the overall cost of that action:<ul><li>Free Action: They gain soft cover until the end of their next turn.</li><li>Quick Action: They ignore engagement, their movement doesn't provoke reactions, and they may pass through (but not stop in) spaces occupied by obstructions and other characters until the end of their next turn.</li><li>Full Action: They may clear a condition that wasn't caused by one of their own systems, talents, etc.</li></ul><br><br>You can choose a benefit from a lower action cost if you like, instead (e.g., if you performed a full action, you could choose the quick action or free action options).",
           "frequency": "1/round",
-          "range": [{ "type": "range", "val": "{sensors}" }]
+          "range": [{ "type": "Range", "val": "{sensors}" }]
         }
       ],
       "active_name": "Projected Aegis",

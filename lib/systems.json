@@ -55,9 +55,9 @@
         "name": "Anti-Armor Rocket",
         "activation": "Quick",
         "detail": "You fire a rocket, targeting a single character within range 10. Your target must pass an Agility save or take 6 AP explosive damage. On a success, they take half damage.",
-        "range": [{ "type": "range", "val": 10 }],
+        "range": [{ "type": "Range", "val": 10 }],
         "damage": [
-          { "type": "Explosive", "val": "6", "ap": true, "save": "agility", "save_half": true }
+          { "type": "Explosive", "val": 6, "ap": true, "save": "agility", "save_half": true }
         ]
       }
     ],
@@ -136,7 +136,7 @@
         "name": "Patch Grenade",
         "activation": "Quick",
         "detail": "You throw a grenade, targeting a character within Range 5. When used on an allied character, you Bolster the target and they may clear one hostile condition. When used on a hostile character, they become Impaired and Slowed until the end of their next turn.",
-        "range": [{ "type": "range", "val": 5 }],
+        "range": [{ "type": "Range", "val": 5 }],
         "add_status": [
           { "id": "impaired", "duration": "end_next_turn_target" },
           { "id": "slow", "duration": "end_next_turn_target" }
@@ -150,7 +150,7 @@
         "hp": 10,
         "evasion": 5,
         "detail": "Deploy a sealant mine which establishes a Burst 1 area. This mine detonates when a character moves adjacent to or over it. All allied characters (including yourself) within the affected area gain Grit+4 Overshield and clear all burn. All hostile characters in the affected area become Immobilized by quick-curing foam sealant, which hardens in place. They remain Immobilized until the hardened foam takes enough damage to break; it counts as an object with 10 HP and Evasion 5.",
-        "add_status": [{ "id": "Immobilized" }],
+        "add_status": [{ "id": "immobilized" }],
         "add_other": { "type": "overshield", "value": "{grit}+4", "target": "ally" }
       }
     ]
