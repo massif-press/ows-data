@@ -80,7 +80,7 @@
       ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/gilgamesh.png",
-    "y_pos": 0
+    "y_pos": 9
   },
   {
     "id": "mf_amber_phantom",
@@ -156,7 +156,7 @@
       ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/amber_phantom.png",
-    "y_pos": 0
+    "y_pos": 16
   },
   {
     "id": "mf_lycan",
@@ -243,7 +243,7 @@
       "integrated": ["mw_integrated_shock_claws"]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/lycan.png",
-    "y_pos": 0
+    "y_pos": 29
   },
   {
     "id": "mf_kutuzov",
@@ -321,6 +321,6 @@
       ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/kutuzov.png",
-    "y_pos": 0
+    "y_pos": 27
   }
 ]
